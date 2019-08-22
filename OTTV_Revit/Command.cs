@@ -14,6 +14,11 @@ namespace OTTV_Revit
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            if(commandData.Application.ActiveUIDocument==null)
+            {
+                TaskDialog.Show("Project missing", "Please open project first");
+                return Result.Cancelled;
+            }
             var win = new OTTV.MainWindow();
             win.Show();
 
