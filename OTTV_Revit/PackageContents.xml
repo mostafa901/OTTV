@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage>
+	<Components Description="2014 parts">
+		<RuntimeRequirements OS="Win32|Win64"
+							 Platform="Revit|Revit Architecture|Revit Structure|Revit MEP"
+							 SeriesMin="R2014"
+							 SeriesMax="R2014" />
+		<ComponentEntry AppName="OTTV"
+						Version="5.0.0"
+						ModuleName="./Contents/2014/OTTV.addin"
+						AppDescription="OTTV" />
+	</Components>
+  <Components Description="2015 parts">
+    <RuntimeRequirements OS="Win32|Win64" 
+                         Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" 
+                         SeriesMin="R2015" 
+                         SeriesMax="R2015" />
+    <ComponentEntry AppName="OTTV" 
+                    Version="5.0.0" 
+                    ModuleName="./Contents/2015/OTTV.addin" 
+                    AppDescription="OTTV" />
+  </Components>
+	<Components Description="2016 parts">
+		<RuntimeRequirements OS="Win32|Win64"
+							 Platform="Revit|Revit Architecture|Revit Structure|Revit MEP"
+							 SeriesMin="R2016"
+							 SeriesMax="R2016" />
+		<ComponentEntry AppName="OTTV"
+						Version="5.0.0"
+						ModuleName="./Contents/2016/OTTV.addin"
+						AppDescription="OTTV" />
+	</Components>
+  <Components Description="2017 parts">
+    <RuntimeRequirements OS="Win32|Win64"
+							 Platform="Revit|Revit Architecture|Revit Structure|Revit MEP"
+							 SeriesMin="R2017"
+							 SeriesMax="R2017" />
+    <ComponentEntry AppName="OTTV"
+						Version="5.0.0"
+						ModuleName="./Contents/2017/OTTV.addin"
+						AppDescription="OTTV" />
+  </Components>
+  <Components Description="2018 parts">
+    <RuntimeRequirements OS="Win32|Win64"
+							 Platform="Revit|Revit Architecture|Revit Structure|Revit MEP"
+							 SeriesMin="R2018"
+							 SeriesMax="R2018" />
+    <ComponentEntry AppName="OTTV"
+						Version="5.0.0"
+						ModuleName="./Contents/2018/OTTV.addin"
+						AppDescription="OTTV" />
+  </Components>
+  <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win32|Win64"
+							 Platform="Revit|Revit Architecture|Revit Structure|Revit MEP"
+							 SeriesMin="R2019"
+							 SeriesMax="R2019" />
+    <ComponentEntry AppName="OTTV"
+						Version="5.0.0"
+						ModuleName="./Contents/2019/OTTV.addin"
+						AppDescription="OTTV" />
+  </Components>
+ <Components Description="2020 parts">
+    <RuntimeRequirements OS="Win32|Win64"
+							 Platform="Revit|Revit Architecture|Revit Structure|Revit MEP"
+							 SeriesMin="R2020"
+							 SeriesMax="R2020" />
+    <ComponentEntry AppName="OTTV"
+						Version="5.0.0"
+						ModuleName="./Contents/2020/OTTV.addin"
+						AppDescription="OTTV" />
+  </Components>
+</ApplicationPackage>

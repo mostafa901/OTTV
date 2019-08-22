@@ -11,12 +11,14 @@
             <RowDefinition Height="150"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
+             
         </Grid.RowDefinitions>
         <DataGrid 
             ItemsSource="{Binding Glassmodels}"
             Grid.Row="0"
             IsReadOnly="True"
             Margin="5"
+            FontSize="12"
             AutoGeneratingColumn="DataGrid_AutoGeneratingColumn"
             />
         <DataGrid 
@@ -24,12 +26,15 @@
             Grid.Row="1"
             CanUserAddRows="False"
             Margin="5"
+            FontSize="12"
             AutoGeneratingColumn="DataGrid_AutoGeneratingColumn"
             CurrentCellChanged="DataGrid_CurrentCellChanged"
+            
             />
         <Image Source="{Binding ImgSource}"
                Grid.Row="2"
                Name="img"
                />
+        
     </Grid>
 </Window>

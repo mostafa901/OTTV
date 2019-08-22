@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -36,7 +37,7 @@ namespace OTTV
            
             Loaded += delegate
             {
-                var txts = File.ReadAllLines("ExampleottvMBE1.txt");
+                var txts = File.ReadAllLines(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ExampleottvMBE1.txt"));
                 foreach (var txt in txts)
                 {
                     string[] its = txt.Split('\t');
@@ -103,8 +104,8 @@ namespace OTTV
 
             var ch = new ZedGraph.GraphPane(); // zedGraphControl1.GraphPane;
 
-            ch.Title.Text = $"Something here";
-            ch.XAxis.Title.Text = "Glass Type Proposals";
+            ch.Title.Text = $"OTTV Analysis";
+            ch.XAxis.Title.Text = "Glass Types Proposal";
             ch.YAxis.Title.Text = "MBE impact";
 
             ch.Y2Axis.IsVisible = false;

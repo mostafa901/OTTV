@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <PrjName>OTTV</PrjName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <!-- <ProjectGuid>{B7431466-661E-4E52-AC05-3C20EA22D6DC}</ProjectGuid> -->
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OTTV_Revit</RootNamespace>
+    <AssemblyName>OTTV_Revit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <ProjectGuid>{B7431466-661E-4E52-AC05-3C20EA22D6DC}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;R2018</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdWindows">
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2018\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.4.0.0-alpha0210\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51482d6f650b2b3f, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.2.0.0-alpha0126\lib\net47\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.IconPacks, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0c0d510f9915137a, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.IconPacks.3.0.0-alpha0188\lib\net47\MahApps.Metro.IconPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.IconPacks.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0c0d510f9915137a, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.IconPacks.3.0.0-alpha0188\lib\net47\MahApps.Metro.IconPacks.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>..\..\..\Downloaded Library\Compiled\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>..\..\..\Downloaded Library\Compiled\Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PrjShared_Utility">
+      <HintPath>..\..\Shared_Utility\PrjShared_Utility\PrjShared_Utility\bin\Debug\PrjShared_Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteNetExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SQLiteNetExtensions.2.1.0\lib\netstandard1.1\SQLiteNetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>packages\SQLitePCLRaw.bundle_green.1.1.5\lib\net45\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>packages\SQLitePCLRaw.bundle_green.1.1.5\lib\net45\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>packages\SQLitePCLRaw.core.1.1.5\lib\net45\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9c301db686d0bd12, processorArchitecture=MSIL">
+      <HintPath>packages\SQLitePCLRaw.provider.e_sqlite3.net45.1.1.5\lib\net45\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.4.5.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.4.0.0-alpha0210\lib\net462\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowScrape">
+      <HintPath>..\..\..\Downloaded Library\Compiled\WindowScrape.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>packages\ZedGraph.6.0.0-alpha0001\lib\net47\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\OTTV\MainWindow.xaml.cs">
+      <Link>MainWindow.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\OTTV\Model\item.cs">
+      <Link>item.cs</Link>
+    </Compile>
+    <Compile Include="Command.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="A4H_RevitAddin.addin" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\ExampleottvMBE1.txt">
+      <Link>ExampleottvMBE1.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PackageContents.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\OTTV\MainWindow.xaml">
+      <Link>MainWindow.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="..\..\SharedProject_RevitLib\SharedProject_RevitLib.projitems" Label="Shared" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets" Condition="Exists('packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets'))" />
+    <Error Condition="!Exists('packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets'))" />
+    <Error Condition="!Exists('packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets'))" />
+  </Target>
+  <Import Project="packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets" Condition="Exists('packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets')" />
+  <Import Project="packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets" Condition="Exists('packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.5\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>
+	 start robocopy *.dll /log:d:\log.txt /R:0 "$(TargetDir)\" "c:\programdata\Autodesk\ApplicationPlugins\$(PrjName).bundle\Contents\2018\\" 
+     start robocopy *.pdb /R:0 "$(TargetDir)\" "c:\programdata\Autodesk\ApplicationPlugins\$(PrjName).bundle\Contents\2018\\" 
+start robocopy *.txt /R:0 "$(TargetDir)\" "c:\programdata\Autodesk\ApplicationPlugins\$(PrjName).bundle\Contents\2018\\" 
+
+      start xcopy /y "$(ProjectDir)A4H_RevitAddin.addin" "c:\programdata\Autodesk\ApplicationPlugins\$(PrjName).bundle\Contents\2018\$(PrjName).addin*"
+
+      start xcopy /y "$(ProjectDir)PackageContents.xml" "c:\programdata\Autodesk\ApplicationPlugins\$(PrjName).bundle\PackageContents.xml*"
+	  
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+   <AddIn Type="Command">
+      <Assembly>OTTV_Revit.dll</Assembly>
+      <ClientId>43B14156-93D5-42D7-A5A1-61AF523A60DB</ClientId>
+      <FullClassName>OTTV_Revit.Command</FullClassName>
+      <Name>RAAPSII</Name>
+      <VendorId>A4H</VendorId>
+      <VendorDescription>Architecture for Humanity</VendorDescription>	  
+   </AddIn>
+  <!--<AddIn Type="Command">
+    <Assembly>RAAPSII.dll</Assembly>
+    <ClientId>42ACC6AE-0901-4398-B709-6DEAAE3073B0</ClientId>
+    <FullClassName>RAAPSII.Command</FullClassName>
+    <Name>RAAPS</Name>
+    <VendorId>A4H</VendorId>
+    <VendorDescription>Architecture for Humanity</VendorDescription>
+  </AddIn>-->
+</RevitAddIns>
